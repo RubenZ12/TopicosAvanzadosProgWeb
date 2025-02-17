@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Imágenes y Listas</title>
+    <style>
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        ul {
+            text-align: left;
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th colspan="2" class="header">Secciones del tutorial</th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Comandos básicos</li>
+                <li>Imágenes</li>
+                <li>Enlaces</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Tablas</li>
+                <li>Funciones especiales</li>
+                <li>Recomendaciones</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2" class="header">Introducción de imágenes en una tabla</th>
+    </tr>
+    <tr>
+        <td>Ícono de página por defecto</td>
+        <td><img src="icono.png" alt="Home"></td>
+    </tr>
+    <tr>
+        <th colspan="2" class="header">Acceso a otros recursos</th>
+    </tr>
+    <tr>
+        <td>Tec. de Zacatecas</td>
+        <td><a href="http://mapaches.itz.edu.mx">http://mapaches.itz.edu.mx</a></td>
+    </tr>
+</table>
+<footer id="footer">Copyright 2025 Ruben Ortega</footer>
+</body>
+</html>

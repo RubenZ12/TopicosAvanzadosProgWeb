@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Anidada</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>Datos 1</td>
+                    <td>Datos 2</td>
+                </tr>
+                <tr>
+                    <td>Datos 3</td>
+                    <td>Datos 4</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>Datos 5</td>
+                    <td>Datos 6</td>
+                </tr>
+                <tr>
+                    <td>Datos 7</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Datos 8</td>
+                                <td>Datos 9</td>
+                            </tr>
+                            <tr>
+                                <td>Datos 10</td>
+                                <td>Datos 11</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+<footer id="footer">Copyright 2025 Ruben Ortega</footer>
+</html>
+

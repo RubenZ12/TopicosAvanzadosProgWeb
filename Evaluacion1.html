@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Biografía</title>
+  <!-- Importación del framework Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    /* Estilos adicionales para los tabs */
+    .tab-content { display: none; }
+    .tab-content.is-active { display: block; }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación principal -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#inicio">
+        Mi Biografía
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#biografia">Biografía</a>
+        <a class="navbar-item" href="#gustos">Gustos e Intereses</a>
+        <a class="navbar-item" href="#otros">Más Información</a>
+        <a class="navbar-item" href="#formulario">Contáctame</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de inicio -->
+  <section class="section" id="inicio">
+    <div class="container">
+      <h1 class="title">Bienvenidos a Mi Página de Biografía</h1>
+      <p>Esta es mi página personal en la que comparto mis gustos, intereses, pasatiempos, lugares favoritos, trabajos y más.</p>
+    </div>
+  </section>
+
+  <!-- Sección Biografía -->
+  <section class="section" id="biografia">
+    <div class="container">
+      <h2 class="title">Biografía</h2>
+      <h3 class="subtitle">Un poco sobre mí</h3>
+      <p>Hola, me llamo <strong>Juan Pérez</strong>. Soy un apasionado desarrollador web que disfruta de la tecnología, la música y la aventura. Me encanta aprender cosas nuevas y explorar el mundo.</p>
+      
+      <!-- Encabezados y Listas -->
+      <h4 class="title is-4">Datos Personales</h4>
+      <ul>
+        <li>Edad: 30 años</li>
+        <li>Profesión: Desarrollador Web</li>
+        <li>Ciudad: Madrid, España</li>
+      </ul>
+      
+      <h4 class="title is-4">Pasatiempos</h4>
+      <ol>
+        <li>Leer libros y cómics</li>
+        <li>Practicar deportes</li>
+        <li>Viajar y conocer nuevas culturas</li>
+      </ol>
+      
+      <!-- Tabla Anidada -->
+      <h4 class="title is-4">Experiencia Laboral</h4>
+      <table class="table is-bordered is-fullwidth">
+        <thead>
+          <tr>
+            <th>Empresa</th>
+            <th>Cargo</th>
+            <th>Período</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Tech Solutions</td>
+            <td>Desarrollador Junior</td>
+            <td>2015 - 2017</td>
+          </tr>
+          <tr>
+            <td>Desarrollador Senior</td>
+            <td>2017 - 2020</td>
+          </tr>
+          <tr>
+            <td>Innovatech</td>
+            <td colspan="2">2020 - Presente</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Ejemplo de tabla anidada en otra tabla -->
+      <h4 class="title is-4">Proyectos Destacados</h4>
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>Proyecto</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Proyecto A</td>
+            <td>
+              <table class="table is-narrow">
+                <tr>
+                  <td>Lenguaje</td>
+                  <td>JavaScript</td>
+                </tr>
+                <tr>
+                  <td>Framework</td>
+                  <td>React</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Proyecto B</td>
+            <td>
+              <table class="table is-narrow">
+                <tr>
+                  <td>Lenguaje</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Framework</td>
+                  <td>Django</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Sección Gustos e Intereses -->
+  <section class="section" id="gustos">
+    <div class="container">
+      <h2 class="title">Mis Gustos e Intereses</h2>
+      
+      <!-- Intereses musicales -->
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle">Intereses Musicales</h3>
+          <p>Disfruto de géneros variados: rock, pop, música clásica y jazz.</p>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128">
+            <img src="https://via.placeholder.com/128" alt="Música">
+          </figure>
+        </div>
+      </div>
+      
+      <!-- Animales Favoritos -->
+      <h3 class="subtitle">Animales Favoritos</h3>
+      <ul>
+        <li>Perros</li>
+        <li>Gatos</li>
+        <li>Elefantes</li>
+      </ul>
+      
+      <!-- Deportes -->
+      <h3 class="subtitle">Deportes que Practico</h3>
+      <p>Juego fútbol, practico natación y salgo a correr.</p>
+      
+      <!-- Series y Películas -->
+      <h3 class="subtitle">Series y Películas Favoritas</h3>
+      <ul>
+        <li>Stranger Things</li>
+        <li>El Señor de los Anillos</li>
+        <li>Breaking Bad</li>
+      </ul>
+      
+      <!-- Lugares Visitados y Favoritos -->
+      <h3 class="subtitle">Lugares Visitados y Favoritos</h3>
+      <p>He recorrido ciudades como París, Nueva York y Tokio. Mi lugar predilecto es la costa mediterránea.</p>
+      
+      <!-- Imágenes con enlaces -->
+      <h3 class="subtitle">Galería de Imágenes</h3>
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <!-- Enlace que se abre en nueva pestaña -->
+          <a href="https://www.example.com" target="_blank">
+            <figure class="image is-128x128">
+              <img src="https://via.placeholder.com/128" alt="Imagen 1">
+            </figure>
+          </a>
+        </div>
+        <div class="column is-one-quarter">
+          <!-- Enlace que se abre en la misma página -->
+          <a href="otra_pagina.html">
+            <figure class="image is-128x128">
+              <img src="https://via.placeholder.com/128" alt="Imagen 2">
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Cards y Tabs -->
+  <section class="section" id="otros">
+    <div class="container">
+      <h2 class="title">Más Información</h2>
+      <!-- Tabs estilo Bulma -->
+      <div class="tabs is-boxed">
+        <ul>
+          <li class="is-active" data-tab="card1"><a>Card 1</a></li>
+          <li data-tab="card2"><a>Card 2</a></li>
+          <li data-tab="card3"><a>Card 3</a></li>
+        </ul>
+      </div>
+      <!-- Cards asociadas a cada tab -->
+      <div id="card1" class="card tab-content is-active">
+        <div class="card-content">
+          <p>Información adicional sobre mis proyectos personales y colaboraciones.</p>
+        </div>
+      </div>
+      <div id="card2" class="card tab-content">
+        <div class="card-content">
+          <p>Detalles sobre mis viajes y experiencias internacionales.</p>
+        </div>
+      </div>
+      <div id="card3" class="card tab-content">
+        <div class="card-content">
+          <p>Datos curiosos y anécdotas de mi vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Formulario -->
+  <section class="section" id="formulario">
+    <div class="container">
+      <h2 class="title">Contáctame</h2>
+      <form action="procesar_formulario.php" method="POST">
+        <!-- Input de texto -->
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input class="input" type="text" name="nombre" placeholder="Tu nombre" required>
+          </div>
+        </div>
+        <!-- Input de contraseña -->
+        <div class="field">
+          <label class="label">Contraseña</label>
+          <div class="control">
+            <input class="input" type="password" name="password" placeholder="Contraseña" required>
+          </div>
+        </div>
+        <!-- Input de correo electrónico -->
+        <div class="field">
+          <label class="label">Correo Electrónico</label>
+          <div class="control">
+            <input class="input" type="email" name="email" placeholder="correo@ejemplo.com" required>
+          </div>
+        </div>
+        <!-- Input para gustos -->
+        <div class="field">
+          <label class="label">Tus Gustos</label>
+          <div class="control">
+            <input class="input" type="text" name="gustos" placeholder="Ej: Música, lectura, deportes">
+          </div>
+        </div>
+        <!-- Input para intereses -->
+        <div class="field">
+          <label class="label">Tus Intereses</label>
+          <div class="control">
+            <input class="input" type="text" name="intereses" placeholder="Ej: Tecnología, arte, historia">
+          </div>
+        </div>
+        <!-- Radio buttons -->
+        <div class="field">
+          <label class="label">Género</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="genero" value="masculino">
+              Masculino
+            </label>
+            <label class="radio">
+              <input type="radio" name="genero" value="femenino">
+              Femenino
+            </label>
+            <label class="radio">
+              <input type="radio" name="genero" value="otro">
+              Otro
+            </label>
+          </div>
+        </div>
+        <!-- Checkboxes -->
+        <div class="field">
+          <label class="label">Tus Hobbies</label>
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" name="hobbies[]" value="lectura">
+              Lectura
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="hobbies[]" value="deportes">
+              Deportes
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="hobbies[]" value="viajar">
+              Viajar
+            </label>
+          </div>
+        </div>
+        <!-- Select -->
+        <div class="field">
+          <label class="label">País de Residencia</label>
+          <div class="control">
+            <div class="select">
+              <select name="pais">
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Input de color -->
+        <div class="field">
+          <label class="label">Selecciona tu color favorito</label>
+          <div class="control">
+            <input class="input" type="color" name="color_favorito" value="#ff0000">
+          </div>
+        </div>
+        <!-- Input de fecha -->
+        <div class="field">
+          <label class="label">Fecha de Nacimiento</label>
+          <div class="control">
+            <input class="input" type="date" name="fecha_nacimiento">
+          </div>
+        </div>
+        <!-- Input de hora -->
+        <div class="field">
+          <label class="label">Hora Preferida de Contacto</label>
+          <div class="control">
+            <input class="input" type="time" name="hora_contacto">
+          </div>
+        </div>
+        <!-- Input de número -->
+        <div class="field">
+          <label class="label">Número de Teléfono</label>
+          <div class="control">
+            <input class="input" type="number" name="telefono" placeholder="Número">
+          </div>
+        </div>
+        <!-- Textarea para opiniones -->
+        <div class="field">
+          <label class="label">Opiniones o Comentarios</label>
+          <div class="control">
+            <textarea class="textarea" name="comentarios" placeholder="Escribe tus opiniones aquí"></textarea>
+          </div>
+        </div>
+        <!-- Botón de envío -->
+        <div class="field">
+          <div class="control">
+            <button class="button is-link" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer con navegación interna -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="#inicio">Inicio</a> | <a href="#biografia">Biografía</a> | <a href="#gustos">Gustos</a> | <a href="#formulario">Contáctame</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts para la funcionalidad de la navbar y los tabs -->
+  <script>
+    // Funcionalidad para el burger menu en dispositivos móviles
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+
+    // Funcionalidad para los tabs
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tabs li');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          // Remover clase is-active de todos los tabs
+          tabs.forEach(item => item.classList.remove('is-active'));
+          tab.classList.add('is-active');
+          // Mostrar la tarjeta asociada
+          tabContents.forEach(content => {
+            if(content.id === target){
+              content.classList.add('is-active');
+            } else {
+              content.classList.remove('is-active');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

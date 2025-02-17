@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Biografía Profesional</title>
+  <!-- Importación de Bulma -->
+  
+  <link rel="stylesheet" href="bulma.min.css">
+
+  <style>
+    /* Estilos personalizados para un diseño más profesional */
+    .hero.is-fullheight-with-navbar {
+      padding-top: 3.25rem;
+    }
+    .navbar {
+      box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
+    }
+    .hero-background {
+      background: url('https://via.placeholder.com/1600x600') center center/cover no-repeat;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+    }
+    .hero .title, .hero .subtitle {
+      color: #fff;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.is-active {
+      display: block;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar fija -->
+  <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#inicio">
+        <strong>Mi Biografía</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#biografia">Biografía</a>
+        <a class="navbar-item" href="#gustos">Gustos</a>
+        <a class="navbar-item" href="#otros">Información</a>
+        <a class="navbar-item" href="#formulario">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Hero con imagen de fondo -->
+  <section class="hero is-fullheight-with-navbar hero-background" id="inicio">
+    <div class="hero-body">
+      <div class="container has-text-centered overlay">
+        <h1 class="title is-1">
+          Bienvenidos a Mi Mundo
+        </h1>
+        <h2 class="subtitle is-3">
+          Descubre mi historia, pasiones y proyectos
+        </h2>
+        <a href="#biografia" class="button is-large is-primary">Saber Más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Biografía -->
+  <section class="section" id="biografia">
+    <div class="container">
+      <div class="box">
+        <h2 class="title">Biografía</h2>
+        <h3 class="subtitle">Un poco sobre mí</h3>
+        <p>Hola, me llamo <strong>Rubén Ortega Rodriguéz</strong> un apasionado del diseño, el arte y la creatividad en todas sus formas. Crecí en la ciudad de Zacatecas, donde desde muy joven desarrollé un gran interés por el diseño artístico, especialmente en áreas como la arquitectura. Al mismo tiempo, me ha fascinado el mundo de la informática y lo digital, explorando cómo se crean los videojuegos, los efectos especiales en el cine y la cinematografía en series y animes.
+
+          También me interesa la fotografía, el arte en sus diversas expresiones y la gastronomía, ya que creo que cada una de estas disciplinas es una forma de contar historias y transmitir emociones. He dedicado tiempo a mejorar mis habilidades en diseño y dibujo de manera autodidacta, lo que me ha permitido desarrollar una visión única sobre la creatividad.
+          
+          Actualmente, estoy enfocando mi crecimiento profesional en convertirme en desarrollador front-end, full-stack y diseñador en Blender, combinando mis pasiones por el diseño y la tecnología.
+          
+          Este blog es mi espacio para compartir mis experiencias, aprendizajes y proyectos en el mundo del diseño, el desarrollo digital y la creatividad.</p>
+        <hr>
+        <h4 class="title is-4">Datos Personales</h4>
+        <ul>
+          <li>Edad: 25 años</li>
+          <li>Profesión: Desarrollador Web</li>
+          <li>Ciudad: Zacatecas, Mexico</li>
+        </ul>
+        <hr>
+        <h4 class="title is-4">Pasatiempos</h4>
+        <ol>
+          <li>Leer libros, cómics y mangas.</li>
+          <li>Practicar deportes</li>
+          <li>Tomar fotos de lugares de interes propio.</li>
+        </ol>
+        <hr>
+        <h4 class="title is-4">Experiencia Laboral</h4>
+        <table class="table is-bordered is-fullwidth">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Cargo</th>
+              <th>Período</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">IndieCode</td>
+              <td>Desarrollador Junior</td>
+              <td>2022 - 2024</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td>NomadCode</td>
+              <td colspan="2">2025 - Presente</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <h4 class="title is-4">Proyectos Destacados</h4>
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Detalles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Proyecto ChatBot</td>
+              <td>
+                <table class="table is-narrow">
+                  <tr>
+                    <td>Lenguaje</td>
+                    <td>JavaScript</td>
+                  </tr>
+                  <tr>
+                    <td>Framework</td>
+                    <td>React</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Proyecto PharmaSnips</td>
+              <td>
+                <table class="table is-narrow">
+                  <tr>
+                    <td>Lenguaje</td>
+                    <td>JavaScript</td>
+                  </tr>
+                  <tr>
+                    <td>Framework</td>
+                    <td>React</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Proyecto Siguard (IMSS)</td>
+              <td>
+                <table class="table is-narrow">
+                  <tr>
+                    <td>Lenguaje</td>
+                    <td>Python</td>
+                  </tr>
+                  <tr>
+                    <td>Framework</td>
+                    <td>Django</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Gustos e Intereses -->
+  <section class="section" id="gustos">
+    <div class="container">
+      <div class="box">
+        <h2 class="title">Mis Gustos e Intereses</h2>
+        <div class="columns is-vcentered">
+          <div class="column is-half">
+            <h3 class="subtitle">Intereses Musicales</h3>
+            <p>Disfruto de géneros variados: rock, pop,electro-house y jazz.</p>
+            <p>Mis artistas y bandas favoritas son: Michael Jackson, The Rolling Stones, Queen, Kendrick, Travis Scott, Kanye West .</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+              <img class="is-rounded" src="https://via.placeholder.com/128" alt="Música">
+            </figure>
+          </div>
+        </div>
+        <hr>
+        <h3 class="subtitle">Animales Favoritos</h3>
+        <ul>
+          <li>Perros</li>
+          <li>Gatos</li>
+          <li>Tejones de la miel</li>
+        </ul>
+        <hr>
+        <h3 class="subtitle">Deportes que Practico</h3>
+        <p>Juego fútbol, practico natación y levanto pesas.</p>
+        <hr>
+        <h3 class="subtitle">Series y Películas Favoritas</h3>
+        <ul>
+          <li>Jojos Bizarre Adventure</li>
+          <li>El Señor de los Anillos</li>
+          <li>Neon Genesis Evangelion</li>
+          <li>Breaking Bad</li>
+          <li>Monogatari</li>
+        </ul>
+        <hr>
+        <h3 class="subtitle">Lugares Visitados y Favoritos</h3>
+        <p>Wakanda, La zacatecana</p>
+        <hr>
+        <h3 class="subtitle">Galería de Imágenes</h3>
+        <div class="columns is-multiline">
+          <div class="column is-one-quarter">
+            <a href="https://media.istockphoto.com/id/1390815938/photo/tokyo-city-in-japan.jpg?s=2048x2048&w=is&k=20&c=tQKiqzGWqT7Nan5yq_T6bhtv6Fcyt6hJ-m335eoV-Jk=" target="_blank">
+              <figure class="image is-128x128">
+                <img src="https://via.placeholder.com/128" alt="Imagen 1">
+              </figure>
+            </a>
+          </div>
+          <div class="column is-one-quarter">
+            <a href="otra_pagina.html">
+              <figure class="image is-128x128">
+                <img src="https://via.placeholder.com/128" alt="Imagen 2">
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Información Adicional: Cards y Tabs -->
+  <section class="section" id="otros">
+    <div class="container">
+      <div class="box">
+        <h2 class="title">Más Información</h2>
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active" data-tab="card1"><a>Proyectos</a></li>
+            <li data-tab="card2"><a>Viajes</a></li>
+            <li data-tab="card3"><a>Anécdotas</a></li>
+          </ul>
+        </div>
+        <div id="card1" class="card tab-content is-active">
+          <div class="card-content">
+            <p>Información adicional sobre mis proyectos personales y colaboraciones.</p>
+          </div>
+        </div>
+        <div id="card2" class="card tab-content">
+          <div class="card-content">
+            <p>Detalles sobre mis viajes y experiencias internacionales.</p>
+          </div>
+        </div>
+        <div id="card3" class="card tab-content">
+          <div class="card-content">
+            <p>Datos curiosos y anécdotas de mi vida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto / Formulario -->
+  <section class="section" id="formulario">
+    <div class="container">
+      <div class="box">
+        <h2 class="title">Contáctame</h2>
+        <form action="procesar_formulario.php" method="POST">
+          <div class="columns">
+            <div class="column is-half">
+              <!-- Nombre -->
+              <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                  <input class="input" type="text" name="nombre" placeholder="Tu nombre" required>
+                </div>
+              </div>
+              <!-- Contraseña -->
+              <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                  <input class="input" type="password" name="password" placeholder="Contraseña" required>
+                </div>
+              </div>
+              <!-- Correo -->
+              <div class="field">
+                <label class="label">Correo Electrónico</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+              </div>
+              <!-- Gustos -->
+              <div class="field">
+                <label class="label">Tus Gustos</label>
+                <div class="control">
+                  <input class="input" type="text" name="gustos" placeholder="Ej: Música, lectura, deportes">
+                </div>
+              </div>
+              <!-- Intereses -->
+              <div class="field">
+                <label class="label">Tus Intereses</label>
+                <div class="control">
+                  <input class="input" type="text" name="intereses" placeholder="Ej: Tecnología, arte, historia">
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <!-- Género -->
+              <div class="field">
+                <label class="label">Género</label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="genero" value="masculino">
+                    Masculino
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="genero" value="femenino">
+                    Femenino
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="genero" value="otro">
+                    Otro
+                  </label>
+                </div>
+              </div>
+              <!-- Hobbies -->
+              <div class="field">
+                <label class="label">Tus Hobbies</label>
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="hobbies[]" value="lectura">
+                    Lectura
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="hobbies[]" value="deportes">
+                    Deportes
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="hobbies[]" value="viajar">
+                    Viajar
+                  </label>
+                </div>
+              </div>
+              <!-- País -->
+              <div class="field">
+                <label class="label">País de Residencia</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select name="pais">
+                      <option value="España">España</option>
+                      <option value="México">México</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Color favorito -->
+              <div class="field">
+                <label class="label">Selecciona tu color favorito</label>
+                <div class="control">
+                  <input class="input" type="color" name="color_favorito" value="#ff0000">
+                </div>
+              </div>
+              <!-- Fecha de nacimiento -->
+              <div class="field">
+                <label class="label">Fecha de Nacimiento</label>
+                <div class="control">
+                  <input class="input" type="date" name="fecha_nacimiento">
+                </div>
+              </div>
+              <!-- Hora de contacto -->
+              <div class="field">
+                <label class="label">Hora Preferida de Contacto</label>
+                <div class="control">
+                  <input class="input" type="time" name="hora_contacto">
+                </div>
+              </div>
+              <!-- Teléfono -->
+              <div class="field">
+                <label class="label">Número de Teléfono</label>
+                <div class="control">
+                  <input class="input" type="number" name="telefono" placeholder="Número">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Comentarios -->
+          <div class="field">
+            <label class="label">Opiniones o Comentarios</label>
+            <div class="control">
+              <textarea class="textarea" name="comentarios" placeholder="Escribe tus opiniones aquí"></textarea>
+            </div>
+          </div>
+          <!-- Botón de envío -->
+          <div class="field is-grouped is-grouped-right">
+            <div class="control">
+              <button class="button is-link" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="#inicio">Inicio</a> | <a href="#biografia">Biografía</a> | <a href="#gustos">Gustos</a> | <a href="#formulario">Contacto</a>
+      </p>
+      <p>&copy; 2025 Rubén Ortega. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts para el funcionamiento de la navbar y los tabs -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Funcionalidad del burger menu en móviles
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+
+      // Funcionalidad de los tabs
+      const tabs = document.querySelectorAll('.tabs li');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          tabs.forEach(item => item.classList.remove('is-active'));
+          tab.classList.add('is-active');
+          tabContents.forEach(content => {
+            content.id === target ? content.classList.add('is-active') : content.classList.remove('is-active');
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
